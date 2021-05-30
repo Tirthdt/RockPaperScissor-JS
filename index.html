@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="dist/css/style.css" />
+
+    <title>Frontend Mentor | Rock, Paper, Scissors</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="score-board">
+        <div class="title">
+          <img src="images/logo.svg" alt="" />
+        </div>
+        <div class="score">
+          <p class="lead">Score</p>
+          <div class="res" id="player-score">0</div>
+        </div>
+      </div>
+      <!-- Step 1 -->
+      <div class="move-selector" id="step1">
+        <img src="images/bg-triangle.svg" alt="triangle" id="bg" />
+        <div class="border-scissor">
+          <div id="scissor" class="move">
+            <img src="images/icon-scissor.svg" alt="scissor" />
+          </div>
+        </div>
+        <div class="border-rock">
+          <div id="rock" class="move">
+            <img src="images/icon-rock.svg" alt="rock" />
+          </div>
+        </div>
+        <div class="border-paper">
+          <div id="paper" class="move">
+            <img src="images/icon-paper.svg" alt="paper" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Step 2 -->
+      <div class="move-selected" id="step2">
+        <div class="move-player"></div>
+        <div class="move-house">
+          <h3>house picked</h3>
+          <div class="border-blank">
+            <div id="blank" class="move"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Step 3 -->
+      <div class="house-move-selected" id="step3">
+        <div class="move-player">
+          <h3>You Picked</h3>
+          <div class="border-scissor">
+            <div id="scissor" class="move">
+              <img src="images/icon-scissor.svg" alt="scissor" />
+            </div>
+          </div>
+        </div>
+        <div class="move-house">
+          <h3>house picked</h3>
+          <div class="border-rock">
+            <div id="rock" class="move">
+              <img src="images/icon-rock.svg" alt="rock" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Step 4 -Res -->
+      <div class="result" id="step4">
+        <div class="move-player">
+          <h3>You Picked</h3>
+          <div class="border-scissor">
+            <div id="scissor" class="move">
+              <img src="images/icon-scissor.svg" alt="scissor" />
+            </div>
+          </div>
+        </div>
+        <div class="res">
+          <p>You lose</p>
+          <button id="replay">Play again</button>
+        </div>
+        <div class="move-house">
+          <h3>The house picked</h3>
+          <div class="border-rock">
+            <div id="rock" class="move">
+              <img src="images/icon-rock.svg" alt="rock" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="rules" id="rules">Rules</div>
+
+    <div class="modal" id="modal">
+      <div class="header">
+        <h3>Rules</h3>
+        <button id="close">
+          <img src="images/icon-close.svg" alt="close" />
+        </button>
+      </div>
+      <div class="rule-img">
+        <img src="images/image-rules.svg" alt="" />
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

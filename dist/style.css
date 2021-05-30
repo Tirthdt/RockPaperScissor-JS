@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  background: radial-gradient(at top, #1f3756, #141539) no-repeat;
+  color: #3b4363;
+}
+
+.container {
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container .score-board {
+  margin: 30px 0;
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+  padding: 20px;
+  border: 6px solid #606e85;
+  border-radius: 15px;
+}
+.container .score-board .score {
+  width: 15%;
+  background: #e4e4e4;
+  text-align: center;
+  border-radius: 5px;
+  padding: 20px;
+}
+.container .score-board .score .lead {
+  font-size: 0.9rem;
+  color: #2a46c0;
+}
+.container .score-board .score .res {
+  font-size: 3rem;
+  color: #3b4363;
+}
+.container .move-selector {
+  position: relative;
+  width: 40%;
+  height: 45%;
+  margin: 80px 0;
+}
+.container .move-selector #triangle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+.container .move-selector .border {
+  background: linear-gradient(#ec9e0e, #eca922);
+}
+.container .move-selector .border .move {
+  background: #fff;
+  width: 20%;
+  height: 20%;
+  padding: 40px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  position: absolute;
+  right: -6px;
+  top: -7%;
+  cursor: pointer;
+  box-shadow: 0px 5px #ec9e0e;
+}
+.container .move-selector .move {
+  background: #fff;
+  width: 20%;
+  height: 20%;
+  padding: 40px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  position: absolute;
+  right: -6px;
+  top: -7%;
+  cursor: pointer;
+  box-shadow: 0px 5px #ec9e0e;
+}
+.container .move-selector #rock {
+  right: 38%;
+  top: 68%;
+}
+.container .move-selector #paper {
+  left: -6px;
+}
+
+/*# sourceMappingURL=style.css.map */
